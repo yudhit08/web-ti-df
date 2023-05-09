@@ -1,0 +1,11 @@
+.video-container {
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px){ 
+    .video-container {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+}

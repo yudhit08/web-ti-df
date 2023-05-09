@@ -1,0 +1,66 @@
+.kontak-kontainer {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+p, h2 {
+    color: white;
+}
+
+h2.kontak-title {
+    display: block;
+}
+
+h2.kontak-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 10px;
+    background-color: yellow;
+    left: 0;
+}
+
+.text {
+    margin-top: 50px;
+}
+
+.text p {
+    line-height: 10px;
+}
+
+.box-kontak {
+    padding: 20px;
+    margin-left: 200px;
+    background-color: #1a2c43;
+}
+
+.konten {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px){ 
+    .kontak-kontainer {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    h2.kontak-title::after {
+        width: 300px;
+    }
+
+    .box-kontak {
+        margin-left: 50px;
+    }
+
+    .konten {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
