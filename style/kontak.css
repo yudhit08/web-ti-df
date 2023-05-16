@@ -35,6 +35,11 @@ h2.kontak-title::after {
     background-color: #1a2c43;
 }
 
+.box-sejarah {
+    padding: 20px;
+    background-color: #1a2c43;
+}
+
 .konten {
     display: grid;
     grid-template-columns: 30% auto;

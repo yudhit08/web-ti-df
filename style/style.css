@@ -26,6 +26,10 @@ li {
     list-style: none;
 }
 
+.misi li {
+    list-style: decimal;
+}
+
 .form-control::-webkit-input-placeholder {
     color: rgb(207, 207, 207);
 }
@@ -103,6 +107,16 @@ li.nav-item.pendaftaran {
     padding: 10px 15px !important;
 }
 
+li.nav-item ul.drop-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul.drop-container li a {
+    color: rgb(31, 31, 31) !important;
+}
+
 .search-input {
     display: flex;
     align-items: center;
@@ -112,6 +126,23 @@ li.nav-item.pendaftaran {
     overflow: hidden;
     width: 100%;
     padding: 5px 10px;
+}
+
+.text-mikrotik-academy {
+    background-color: var(--darken-blue);
+}
+
+.text-mikrotik-academy ol li{
+    list-style: decimal;
+}
+
+h3.berita-container::after {
+    content: "";
+    background-color: var(--orange);
+    width: 100%;
+    height: 5px;
+    display: block;
+    margin: 10px 0;
 }
 
 .search-input input {
@@ -164,6 +195,61 @@ h2.section-title::after {
     height: 10px;
     top: 23px;
     background-color: var(--darken-blue);
+}
+
+ol.tujuan li {
+    list-style: decimal;
+}
+
+.judul-tujuan::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--orange);
+}
+
+.judul-sasaran {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.judul-sasaran::after, .judul-sasaran::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--darken-blue);
+}
+
+ol.strategi ul li {
+    list-style: disc;
+}
+
+h2.section-title-misi {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2.section-title-misi::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    top: 23px;
+    background-color: var(--darken-blue);
+}
+
+h2.section-title2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 10px;
+    background-color: yellow;
+    left: 0;
 }
 
 .hightlight-news p.date {
@@ -299,6 +385,10 @@ p.title {
     .banner-kontainer p {
         font-size: .8rem;
         font-weight: 500;
+    }
+
+    h2.section-title2::after {
+        width: 300px;
     }
 
     .navbar-top {
